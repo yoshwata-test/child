@@ -1,0 +1,6 @@
+jobs:
+  test:
+    requires: [ ~commit, ~pr ]
+    image: node:22
+    steps:
+      - echo "This is test job"
